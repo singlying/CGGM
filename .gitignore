@@ -1,0 +1,65 @@
+# 系统文件
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# Python相关
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.manifest
+*.spec
+
+# IDE和编辑器
+.idea/
+.vscode/
+*.iml
+*.sublime-project
+*.sublime-workspace
+.spyderproject
+.spyproject
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# 数据特征文件（大文件，不需要提交到版本控制）
+features/
+IEMOCAP_features*/
+MOSI_features*/
+*.h5
+*.hdf5
+*.pkl
+*.npy
+*.npz
+
+# 模型检查点（大文件，不需要提交）
+checkpoints/
+*.pth
+*.pt
+*.ckpt
+
+# 环境变量
+.env
+.env.local
