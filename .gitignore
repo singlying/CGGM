@@ -54,7 +54,7 @@ MOSI_features*/
 *.npy
 *.npz
 
-# 模型检查点（大文件，不需要提交）
+# 模型检查点（大文件，单独提交）
 checkpoints/
 *.pth
 *.pt

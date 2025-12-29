@@ -45,7 +45,7 @@ def iemorun():
 
 
     # Tuning
-    parser.add_argument('--batch_size', type=int, default=64, metavar='N',
+    parser.add_argument('--batch_size', type=int, default=32, metavar='N',
                         help='batch size')
     # ??
     parser.add_argument('--clip', type=float, default=0.8,
@@ -54,19 +54,18 @@ def iemorun():
                         help='initial learning rate')
     parser.add_argument('--cls_lr', type=float, default=5e-4,
                         help='initial learning rate')
-    parser.add_argument('--optim', type=str, default='Adam')
+    parser.add_argument('--optim', type=str, default='AdamW')
     # ??
     parser.add_argument('--num_epochs', type=int, default=30)
     parser.add_argument('--when', type=int, default=10,
                         help='when to decay learning rate')
     parser.add_argument('--rou', type=float, default=1.3)
-    parser.add_argument('--lamda', type=float, default=0.2)
+    parser.add_argument('--lamda', type=float, default=0.15)
 
 
     # Logistics
-    parser.add_argument('--log_interval', type=int, default=30,
+    parser.add_argument('--log_interval', type=int, default=10,
                         help='frequency of result logging')
-    # ？？
     parser.add_argument('--seed', type=int, default=666,
                         help='random seed')
     parser.add_argument('--no_cuda', action='store_true',

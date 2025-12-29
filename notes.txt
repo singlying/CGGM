@@ -3,22 +3,20 @@ datastes 数据导入
 models
 modules 实现了transformer编码器  包括 注意力机制，位置编码，完整的编码器结构。
 run 提供了各自数据集的启动文件//从这里开始运行
+src eval_metrices 实现了各种评估指标和损失函数
 
-src:
-    eval_metrices 实现了各种评估指标和损失函数
-
+如果使用git，请使用下面的代理链接：
+https://ghfast.top/https://github.com/singlying/CGGM.git
 
 运行方式：在CGGM主文件夹
 每个单独模块需要添加__init__.py文件
-python -m run.iemo_run
-    --data_path "./IEMOCAP_features_2021/"
+python -m run.iemo_run --data_path "features/IEMOCAP_features_2021/"
     --model_save_path checkpoints/iemo_best_model.pth
-
 python -m run.mosi_run --data_path "features/MOSI_features/mosi_data_noalign.pkl"
 
 待完成的事项：
 - 保存参数 done
-- 在MOSI上进行训练，推荐使用unaligned_50.pkl
+- 在MOSI上进行训练 done
 - ß变化曲线
 - 梯度余弦相似度热力图，类比论文中的figure2
 - 模态缺失实验
