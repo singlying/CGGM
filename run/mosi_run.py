@@ -44,7 +44,7 @@ def mosirun():
 
 
     # Tuning
-    parser.add_argument('--batch_size', type=int, default=64, metavar='N',
+    parser.add_argument('--batch_size', type=int, default=32, metavar='N',
                         help='batch size')
     parser.add_argument('--clip', type=float, default=0.8,
                         help='gradient clip value')
