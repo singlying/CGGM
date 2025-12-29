@@ -14,6 +14,8 @@ python -m run.iemo_run
     --data_path "./IEMOCAP_features_2021/"
     --model_save_path checkpoints/iemo_best_model.pth
 
+python -m run.mosi_run --data_path "features/MOSI_features/mosi_data_noalign.pkl"
+
 待完成的事项：
 - 保存参数 done
 - 在MOSI上进行训练，推荐使用unaligned_50.pkl
